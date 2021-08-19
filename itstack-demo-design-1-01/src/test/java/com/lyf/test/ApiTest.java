@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.sql.SQLOutput;
 import java.util.HashMap;
 
 /**
@@ -15,7 +16,7 @@ import java.util.HashMap;
  * @create 2021-08-15-18:18
  */
 public class ApiTest {
-
+    //222
     private Logger logger = LoggerFactory.getLogger(ApiTest.class);
 
     @Test
@@ -61,6 +62,7 @@ public class ApiTest {
         AwardRes awardRes03 = prizeController.awardToUser(req03);
         logger.info("请求参数：{}", JSON.toJSON(req03));
         logger.info("测试结果：{}", JSON.toJSON(awardRes03));
+        System.out.println("测试");
     }
 
 }
